@@ -115,6 +115,9 @@
 			color: white;
 
 		}
+		h3{
+			color:white;
+		}
 	</style>
 <!-- end of css style -->
 
@@ -135,9 +138,8 @@
            			d=d-1
                    window.alert("Email is not correct");
                 }
-             if (b.length>4)
-              {}
-              	  else{
+             if (not b.length>=4)
+              {
               	  	d=d-1
                   window.alert("Password is not correct");
                }
@@ -157,13 +159,14 @@ place your website link in place of netflix-main-page.html*/
 		<span><img src="logo.png"></span>
 		<button>Sign up</button>
 	</div> 
+	<h3> Enter valid Email Ex:- 123@gmail.com and passward should be more than 4 characters </h3>
 	<div class="middle">
 		<div class="container">
 			<div class="login">Login</div>
 				<input id="Mail" type="email" placeholder="Email">
 				<input id="Password" type="password" placeholder="Password">
 			<div class="remember">
-				<h3> Enter valid Email Ex:- 123@gmail.com and passward should be more than 4 characters </h3>
+				
 				<input type="checkbox">
 				<div>Remeber me</div>
 			</div>
