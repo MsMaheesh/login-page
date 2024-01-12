@@ -128,16 +128,18 @@
           var c= /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
           var d=2;
           if (a.match(c) )
-           {}
+           {
+		 window.alert("Email and Password is correct");  
+	   }
            else{
            			d=d-1
-                   window.alert("mail is not correct");
+                   window.alert("Email is not correct");
                 }
              if (b.length>4)
               {}
               	  else{
               	  	d=d-1
-                  window.alert("password is not correct");
+                  window.alert("Password is not correct");
                }
           if (d==2) {
 
@@ -162,6 +164,7 @@ place your website link in place of netflix-main-page.html*/
 				<input id="Password" type="password" placeholder="Password">
 			<div class="remember">
 				<input type="checkbox">
+				<h3> Enter valid Email Ex:- 123@gmail.com and passward should be more than 4 characters </h3>
 				<div>Remeber me</div>
 			</div>
            	<button onclick="fun()"> Login </button>
