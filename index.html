@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -126,31 +126,26 @@
 
 	<script type="text/javascript">
 		function fun()
-       {
+       { 
+		console.log('ddd')
           var a=document.getElementById("Mail").value;
           var b=document.getElementById("Password").value;
           var c= /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
-          var d=2;
-          if (a.match(c) && b>=4)
+          
+        if (a.match(c) && b.length>=4)
            {
-		 window.alert("Email and Password is correct");  
-	   }
-           else{
-           			d=d-1
+		          //window.alert("Email and Password is correct"); 
+				 window.location='https://msmaheesh.github.io/clone/'
+				 
+	        }
+        if(!a.match(c)){
+           			
                    window.alert("Email is not correct");
-                }
-             if (not b.length>=4)
-              {
-              	  	d=d-1
-                  window.alert("Password is not correct");
-               }
-            if (d==2) {
-
-/* change the hyper link with your file location
-place your website link in place of netflix-main-page.html*/
-          	
-				window.location = "netflix-main-page.html"
-          }
+              }
+        if ( b.length<=3){
+              	 window.alert("Password is not correct");
+            }
+            
         } 
 
 	</script>
@@ -170,8 +165,9 @@ place your website link in place of netflix-main-page.html*/
 				<input type="checkbox">
 				<div>Remeber me</div>
 			</div>
-           	<button onclick="fun()"> Login </button>
+           	<button onclick=fun()> Login </button>
 		</div>
 	</div>
 </body>
 </html>
+
